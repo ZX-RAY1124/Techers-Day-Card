@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>教师节快乐</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* 设置全局字体 */
+      display: flex; /* 使用flex布局 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 200vh; /* 设置高度为视口高度的100% */
+      margin: 0; /* 移除默认边距 */
+      overflow: auto;
+      background-size: cover;
+    }
+    .name {
+      color: rgb(255, 151, 0);
+      font-size: 50px;
+    }
+    h2 {
+      font-size:30px
+    }
+    .icon {
+      max-width: 50%;
+      height: auto; /* 自动调整图片高度 */
+      border-radius: 15px; /* 设置图片圆角 */
+    }
+    .showup {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    .show {
+      font-family: 华文仿宋,serif;
+      font-size: 20px;
+    }
+    .tip {
+      font-size: 20px;
+      font-family: 华文仿宋,serif;
+    }
+    .tag {
+      position:fixed;
+      bottom: 5px;
+      right: 15px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="message">
+      <p class="show">微风轻拂，时光静好，在这充满温情的日子里，愿这份祝福为您带来一抹微笑</p>
+      <h1 class="name">亲爱的欧老师</h1>
+    </div>
+    <div class="message">
+      <h2>祝您教师节快乐!</h2>
+      <p>感谢您的辛苦付出，祝您节日愉快!</p>
+      <p>感谢初中三年来您对我的照顾！</p>
+      <p>时间如白驹过隙，今天我已经正式成为一名大学生了</p>
+      <p>我至今都很难忘记中考体育的那70分</p>
+      <p>在绝大多数同情况的人都选择放弃的情况下，您推了我一把</p>
+      <p>纵使希望渺茫，我努力将这一切变为了可能</p>
+      <p>现在的我坚持保留了晨跑的习惯，游泳的年卡也一直在使用</p>
+      <p>自我们离开后，学校的游泳池开放了，我相信这条路也会让更多和我一样处境的人突破缺陷，超越自我</p>
+      <p>感谢您在我体育备考的过程中的不断支持与鼓励</p>
+      <p>大学这四年，我会让自己减重下来的！</p>
+    </div>
+    <div class="img_container">
+      <img class="showup" src="img/img8.jpg" alt="img8">
+    </div>
+    <audio id="music" src="audio/bgm.wav"></audio>
+    <p class="show">祝老师身体健康，万事如意，心想事成！！</p>
+  </div>
+  <button class="float_button" onclick="playaudio()">🎵</button>
+  <p class="tag">Program by 谢朝旭</p>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
