@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>教师节快乐</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif; /* 设置全局字体 */
+      display: flex; /* 使用flex布局 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 260vh; /* 设置高度为视口高度的100% */
+      margin: 0; /* 移除默认边距 */
+      overflow: auto;
+      background-size: cover;
+    }
+    .name {
+      color: rgb(255, 151, 0);
+      font-size: 50px;
+    }
+    h2 {
+      font-size:30px
+    }
+    .icon {
+      max-width: 50%;
+      height: auto; /* 自动调整图片高度 */
+      border-radius: 15px; /* 设置图片圆角 */
+    }
+    .showup {
+      max-width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+    .show {
+      font-family: 华文仿宋,serif;
+      font-size: 20px;
+    }
+    .tip {
+      font-size: 20px;
+      font-family: 华文仿宋,serif;
+    }
+    .tag {
+      position:fixed;
+      bottom: 5px;
+      right: 15px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="message">
+      <p class="show">一支粉笔，书写春秋；三尺讲台，绽放光芒。教师节快乐，愿您的岁月如诗如画</p>
+      <h1 class="name">亲爱的皇上</h1>
+    </div>
+    <div class="message">
+      <h2>祝您教师节快乐!</h2>
+      <p>感谢您的辛苦付出，祝您节日愉快!</p>
+      <p>感谢初中三年来您对我的照顾！</p>
+      <p>时间如白驹过隙，今天我已经正式成为一名大学生了</p>
+      <p>三年前，我喜欢编程，平时也喜欢做一些小项目，在这个最长的暑假里，我拣回了很多东西，今天是教师节，在有了想法后，我做出了这封电子贺卡</p>
+      <p>初中三年您一直是我们的语文老师，您一手把我们七班带起来</p>
+      <p>我曾经困惑过，难受过，当初是您愿意和我在办公室谈话，让我知道其实作为人，品德始终比才华更重要</p>
+      <p>我初中的时候确实没有认识到学习的重要性，有时很努力，有时会松懈，回答不出为什么而学，总是因为各种小事发火，流泪</p>
+      <p>但自从遇到了您后，一切都不一样了</p>
+      <p>有您引人入胜的语文课做引导，我从初升高之后语文一直是优势科目</p>
+      <p>有您严格的教导和指正，我才能从不自觉的松懈中重新警觉起来</p>
+      <p>有一节语文课，我拿错了历史书，我为我的心不在焉买了单，现在我步步紧驱，因为提升能力，本就是我们应该去严格认真做的事</p>
+      <p>现在的我已经不一样了</p>
+      <p>我努力抓住一切机会，高一的时候代表学校参加信息学竞赛，高二的时候到广州市二中参加市赛，我不断发展自己的优势，同时也努力承担认真学习，总结经验的基本任务</p>
+      <p>如果说现在我变了什么，那就是从比较理想变的现实了，考虑事情变周全了，过去的我很幼稚，但我始终在成长，不断以前事为诫，改掉缺点</p>
+      <p>我相信未来始终有机遇在等着我</p>
+      <p>而我会毫不犹豫地抓住他</p>
+      <p class="tip">(点击贺卡召唤气球)</p>
+    </div>
+    <div class="img_container">
+      <img class="showup" src="img/img7.jpg" alt="img7">
+    </div>
+    <audio id="music" src="audio/bgm.wav"></audio>
+    <p class="show">祝老师身体健康，万事如意，心想事成！！</p>
+  </div>
+  <button class="float_button" onclick="playaudio()">🎵</button>
+  <p class="tag">Program by 谢朝旭</p>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
