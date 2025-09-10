@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif; /* 设置全局字体 */
+
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 180vh; /* 设置高度为视口高度的100% */
+  margin: 0; /* 移除默认边距 */
+  overflow: auto;
+  background-image: url("background.webp");
+  background-size: cover;
+}
+.card {
+  background-color: #DED1BC; /* 设置卡片背景颜色 */
+  border-radius: 15px; /* 设置圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  width: 500px; /* 设置卡片宽度 */
+  padding: 20px; /* 设置内边距 */
+  text-align: center; /* 文本居中 */
+  position: relative; /* 相对定位 */
+  z-index: 1; /* 确保卡片在气球之上 */
+}
+
+.float_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: coral;
+  color:white;
+  border:none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.img_container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  gap: 20px; /* 图片之间的间距 */
+}
+.message {
+  margin-top: 20px; /* 上外边距 */
+  color: #333; /* 设置文字颜色 */
+}
+.balloon {
+  position: absolute; /* 绝对定位 */
+  background-color: orange; /* 设置气球背景颜色 */
+  font-size: 40px;
+  color: white; /* 设置气球文字颜色 */
+  border-radius: 50%; /* 设置气球为圆形 */
+  width: 60px; /* 设置气球宽度 */
+  height: 60px; /* 设置气球高度 */
+  line-height: 60px; /* 设置行高以使文字垂直居中 */
+  text-align: center; /* 文字水平居中 */
+  animation: floatUp 5s forwards ease-in-out; /* 添加向上浮动动画 */
+}
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; } /* 初始状态，无位移，完全不透明 */
+  100% { transform: translateY(-500px); opacity: 0; } /* 结束状态，向上移动500px，完全透明 */
+}
